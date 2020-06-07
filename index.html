@@ -10,35 +10,19 @@
     <div class="container">
         <h1>Calendar</h1>
 <!-- Calendario -->
-        <div id="calendar">
-            <!-- Opcoes (selecionar ano e mes) -->
+        <div id="calendar" language="PT-BR">
             <div id="options">
-                <button onclick="previous()">Previous</button>
+                <button onclick="previous()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
                 <h3 id="monthAndYear">Month and Year</h3>
-                <button onclick="next()">Next</button>
+                <button onclick="next()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
             </div>
-            <!-- Opcoes -->
-            <!-- Tabela de Calendario -->
             <table id="calendar-table">
-                <thead>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
-                </thead>
-
+                <thead id="calendar-head"></thead>
                 <tbody id="calendar-body"></tbody>
             </table>
-            <!-- Tabela de Calendario -->
         </div>
 <!-- Calendario -->
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
