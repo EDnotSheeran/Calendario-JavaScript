@@ -42,7 +42,7 @@ function showCalendar(month, year) {
                 let cell = document.createElement('td')
                 let celltext = document.createTextNode(date)
                 // Adiciona uma classe especial ao dia de hoje
-                if(date === currentDay){
+                if(date === currentDay && month === today.getMonth() && year === today.getFullYear()){
                     cell.classList.add('current-day')
                 }
                 cell.appendChild(celltext)

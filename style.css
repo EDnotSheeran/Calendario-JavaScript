@@ -1,15 +1,77 @@
 body{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
     text-align: center;
+    color: rgba(255,255,255,.5);
+    text-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+
+/* Calendar - CSS */
+
+#calendar {
+    width: 100%;
+    /* max-width: 300px; */
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    border-radius: 6px;
+    overflow: hidden;
 }
 #calendar #options {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f45267;
+    color: white;
 }
-#calendar #options h3{
+#calendar #options h3{ 
+    padding: 30px 0;
+    font-size: 24px;
     margin: 0px 10px;
-    padding: 0;
+}
+#calendar #options button {
+    padding: 30px 0;
+    width: 100%;
+    max-width: 50px;
+    border: 0;
+    background: transparent;
+}
+#calendar #options button:focus {
+    outline: none;
+}
+#calendar #calendar-table {
+
+    max-width: 90%;
+    margin:30px;
+}
+#calendar #calendar-table th,
+#calendar #calendar-table td {
+    text-align: center;
+}
+
+#calendar #calendar-table #calendar-head{
+    color: #f45267;
+}
+#calendar #calendar-table #calendar-head th{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+#calendar #calendar-table #calendar-body td{
+    font-size: 25px;
+    background: #fff;
+    color: #888;
+    padding: 25px 40px;
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,.1);
+}
+#calendar #calendar-table #calendar-body td.current-day {
+    background-color: #f45267 !important;
+    color: #fff !important;
 }
